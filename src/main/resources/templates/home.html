@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="UTF-8">
-	<title>TODO MVC</title>
-	<link rel='stylesheet' href='/site.css'>
-	<link rel='stylesheet' href='/webjars/bootstrap/4.5.3/css/bootstrap.min.css'>
-	<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>TODO MVC</title>
+<link rel='stylesheet' href='/site.css'>
+<link rel='stylesheet'
+	href='/webjars/bootstrap/4.5.3/css/bootstrap.min.css'>
+<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<h1>TODO MVC</h1>
-	<p>Basic TODO MVC</p>
-	<form>
-		<div class="form-group">
-				<input class="form-control w-50" type="text">
+	<div class="container h-100 d-flex justify-content-center">
+		<div class="card mb3 my-auto">
+			<h1 class="card-header">TODO MVC</h1>
+			<div class="card-body">
+				<p>Basic TODO MVC</p>
+				<form class="form-inline">
+					<div class="align-items-center">
+						<input class="form-control w-100" type="text">
+						<button class="btn btn-outline-primary">Add Entry</button>
+					</div>
+				</form>
+			</div>
 		</div>
-		<input class="btn btn-outline-primary" type="submit" value="Add">
-	</form>
+	</div>
 </body>
 </html>

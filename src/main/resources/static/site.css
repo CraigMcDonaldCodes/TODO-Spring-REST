@@ -1,4 +1,5 @@
-body {
-	color: blue;
-	background-color: #E6DBAC;
+html, body {
+	/* background-color: #E6DBAC; */
+	background-color: gray;
+	height: 100%;
 }
