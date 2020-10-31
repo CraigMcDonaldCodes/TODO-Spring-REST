@@ -13,16 +13,44 @@
 		<div class="card w-75">
 			<h1 class="card-header text-center">TODO MVC</h1>
 			<div class="card-body">
+				<br>
 				<form class="">
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="What are you up to?" required autofocus>
 						<div class="input-group-append">
-							<button class="btn btn-outline-primary">Submit</button>
+							<button class="btn btn-primary">Submit</button>
 						</div>
 					</div>
 				</form>
 				<br>
-				<table>
+				<br>
+				<br>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Entry</th>
+							<th scope="col">Date Created</th>
+							<th scope="col">Date Completed</th>
+							<th scope="col">Complete Entry</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Read another Java book</td>
+							<td>2020-10-31 22:32</td>
+							<td></td>
+							<td><button class="btn btn-outline-secondary">✔</button></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Read more Java books, go and check Amazon for some good reviews for what to read next</td>
+							<td>2020-10-31 23:08</td>
+							<td></td>
+							<td><button class="btn btn-outline-secondary">✔</button></td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</div>
