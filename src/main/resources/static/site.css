@@ -1,5 +1,5 @@
-html, body {
-	/* background-color: #E6DBAC; */
-	background-color: gray;
-	height: 100%;
+body {
+	font-family: 'Itim', cursive;
+	background-color: #E6FAFF;
+	height: 90%;
 }
