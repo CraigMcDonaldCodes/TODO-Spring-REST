@@ -52,7 +52,7 @@ public class ActionController {
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////
-	@RequestMapping(method = RequestMethod.PUT)
+	@RequestMapping(method = RequestMethod.PUT, path = "/api/update")
 	public Entry updateEntry() {
 
 		// TODO: Complete implementation
