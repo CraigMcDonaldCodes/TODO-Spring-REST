@@ -1,2 +1,2 @@
 # TODO-Spring-REST
-A very basic TODO web app build in Spring MVC
+A very basic TODO web app built in Spring Boot.
