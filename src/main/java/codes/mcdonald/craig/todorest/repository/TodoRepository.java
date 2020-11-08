@@ -1,8 +1,8 @@
-package codes.mcdonald.craig.todomvc.repositories;
+package codes.mcdonald.craig.todorest.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import codes.mcdonald.craig.todomvc.models.Entry;
+import codes.mcdonald.craig.todorest.model.Entry;
 
 public interface TodoRepository extends CrudRepository<Entry, Long> {
 }

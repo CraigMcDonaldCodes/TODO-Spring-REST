@@ -1,4 +1,4 @@
-package codes.mcdonald.craig.todomvc.controllers;
+package codes.mcdonald.craig.todorest.controller;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import codes.mcdonald.craig.todomvc.models.Entry;
+import codes.mcdonald.craig.todorest.model.Entry;
 
 @RestController
 public class ActionController {

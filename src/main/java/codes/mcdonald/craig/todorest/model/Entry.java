@@ -1,4 +1,4 @@
-package codes.mcdonald.craig.todomvc.models;
+package codes.mcdonald.craig.todorest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
