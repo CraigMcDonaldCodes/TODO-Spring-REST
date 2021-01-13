@@ -4,6 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,23 +13,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import codes.mcdonald.craig.todorest.model.Entry;
+import codes.mcdonald.craig.todorest.repository.TodoRepository;
 
 @RestController
 public class ActionController {
+	
+	@Autowired
+	private TodoRepository repository;
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	@GetMapping("/api/entries")
 	public List<Entry> getEntries() {
 		
-		var list = new ArrayList<Entry>();
-		var entry = new Entry();
-
-		entry.setDescription("Finish TODO web site");
-		entry.setDateCreated(ZonedDateTime.now());
+		var entries = repository.findAll();
 		
-		list.add(entry);
-		
-		return list;
+		return entries;
 	}
 	
 
