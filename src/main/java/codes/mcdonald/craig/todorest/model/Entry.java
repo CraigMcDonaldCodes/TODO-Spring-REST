@@ -24,7 +24,7 @@ public class Entry {
 	@Column(name = "date_completed")
 	private ZonedDateTime dateCompleted;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
