@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>codes.mcdonald.craig</groupId>
-	<artifactId>todo-spring-rest</artifactId>
+	<artifactId>todo-rest-in-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TODO Spring Boot REST</name>
-	<description>A basic TODO web app written in Spring MVC</description>
+	<name>TODO REST in Spring Boot</name>
+	<description>A basic TODO web app written in Spring</description>
 
 	<properties>
 		<java.version>15</java.version>
