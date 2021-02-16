@@ -6,11 +6,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import codes.mcdonald.craig.todorest.model.Entry;
 import codes.mcdonald.craig.todorest.repository.TodoRepository;
 
 @SpringBootTest
+@Transactional
 class TodoSpringMvcApplicationTests {
 	
 	@Autowired
@@ -24,7 +26,7 @@ class TodoSpringMvcApplicationTests {
 	void hibernateCreatesInitialDatabaseEntries() {
 		
 		var entries = repository.findAll();
-		Assertions.assertEquals(entries.size(), 4);
+		Assertions.assertEquals(4, entries.size());
 	}
 	
 	@Test
@@ -38,6 +40,6 @@ class TodoSpringMvcApplicationTests {
 		
 		var entries = repository.findAll();
 		
-		Assertions.assertEquals(entries.size(), 5);
+		Assertions.assertEquals(5, entries.size());
 	}
 }
