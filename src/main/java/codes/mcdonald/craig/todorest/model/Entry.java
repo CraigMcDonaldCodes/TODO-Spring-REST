@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Data;
+
+@Data
 @Entity
 public class Entry {
 
@@ -24,35 +27,4 @@ public class Entry {
 	@Column(name = "date_completed")
 	private ZonedDateTime dateCompleted;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public ZonedDateTime getDateCreated() {
-		return dateCreated;
-	}
-
-	public void setDateCreated(ZonedDateTime dateCreated) {
-		this.dateCreated = dateCreated;
-	}
-
-	public ZonedDateTime getDateCompleted() {
-		return dateCompleted;
-	}
-
-	public void setDateCompleted(ZonedDateTime dateCompleted) {
-		this.dateCompleted = dateCompleted;
-	}
 }
