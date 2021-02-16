@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import codes.mcdonald.craig.todorest.model.Entry;
@@ -47,8 +46,9 @@ public class ActionController {
 		return repository.save(entry);
 	}
 	
+
 	////////////////////////////////////////////////////////////////////////////////////////////////////
-	@RequestMapping(method = RequestMethod.PUT, path = "/api/update")
+	@PutMapping("/api/update")
 	public Entry updateEntry() {
 
 		// TODO: Complete implementation
