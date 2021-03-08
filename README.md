@@ -1,4 +1,4 @@
-# TODO-Spring-REST
+# TODO REST in Spring
 
 A very basic TODO web app built in Spring Boot used as a learning project.
 
