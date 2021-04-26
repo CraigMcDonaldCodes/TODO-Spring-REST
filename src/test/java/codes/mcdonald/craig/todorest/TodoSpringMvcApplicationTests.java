@@ -27,7 +27,7 @@ class TodoSpringMvcApplicationTests {
 	void hibernateCreatesInitialDatabaseEntries() {
 
 		var entries = repository.findAll();
-		Assertions.assertEquals(4, entries.size());
+		Assertions.assertEquals(6, entries.size());
 	}
 
 	@Test
@@ -41,7 +41,7 @@ class TodoSpringMvcApplicationTests {
 
 		var entries = repository.findAll();
 
-		Assertions.assertEquals(5, entries.size());
+		Assertions.assertEquals(7, entries.size());
 	}
 
 	@Test
@@ -71,6 +71,6 @@ class TodoSpringMvcApplicationTests {
 
 		var entries = repository.findAll();
 
-		Assertions.assertEquals(8, entries.size());
+		Assertions.assertEquals(10, entries.size());
 	}
 }
