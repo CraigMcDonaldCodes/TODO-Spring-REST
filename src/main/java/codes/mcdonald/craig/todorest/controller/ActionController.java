@@ -33,8 +33,6 @@ public class ActionController {
 	@GetMapping("/api/entry/{?}")
 	public Entry getEntry() {
 		
-		// TODO: Complete implementation
-
 		return new Entry();
 	}
 	
@@ -51,8 +49,6 @@ public class ActionController {
 	@PutMapping("/api/update")
 	public Entry updateEntry() {
 
-		// TODO: Complete implementation
-		
 		return new Entry();
 	}
 	
@@ -60,8 +56,6 @@ public class ActionController {
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	@DeleteMapping("/api/delete/{id}")
 	public Entry deleteEntry(@PathVariable("id" ) Long id) {
-		
-		// TODO: This is probably a bad way of doing this
 		
 		Optional<Entry> entry = repository.findById(id);
 		
