@@ -27,10 +27,16 @@ public class ActionController {
 		return repository.findAll();
 	}
 	
-	@GetMapping("/api/entry/{?}")
-	public Entry getEntry() {
+	@GetMapping("/api/entry/{id}")
+	public Entry getEntry(@PathVariable Long id) {
 		
-		return new Entry();
+		var entry = repository.findById(id);
+		
+		if (entry.isPresent()) {
+			return entry.get();
+		} else {
+			return null;
+		}
 	}
 	
 	@PostMapping("/api/create")
@@ -46,7 +52,7 @@ public class ActionController {
 	}
 	
 	@DeleteMapping("/api/delete/{id}")
-	public Entry deleteEntry(@PathVariable("id" ) Long id) {
+	public Entry deleteEntry(@PathVariable Long id) {
 		
 		Optional<Entry> entry = repository.findById(id);
 		
