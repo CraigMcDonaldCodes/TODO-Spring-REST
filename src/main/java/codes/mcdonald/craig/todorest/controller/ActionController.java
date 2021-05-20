@@ -21,13 +21,13 @@ public class ActionController {
 	@Autowired
 	private TodoRepository repository;
 
-	@GetMapping("/api/entries")
+	@GetMapping("/api/fetch")
 	public List<Entry> getEntries() {
 		
 		return repository.findAll();
 	}
 	
-	@GetMapping("/api/entry/{id}")
+	@GetMapping("/api/fetch/{id}")
 	public Entry getEntry(@PathVariable Long id) {
 		
 		var entry = repository.findById(id);
