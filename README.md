@@ -12,6 +12,5 @@ A very basic TODO web app built in Spring Boot used as a learning project.
 
 ## JavaScript
 
-  * jQuery
+  * React
   * DataTables
-
